@@ -19,7 +19,7 @@ class UserController extends Controller
         $this->apiService = $apiService;
     }
 
-    public function thirdPartyApi()
+    public function userList()
     {
         $response = $this->apiService->makeAPIRequest();
         return $response;

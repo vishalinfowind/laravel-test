@@ -26,7 +26,7 @@ import { ref, onMounted } from 'vue';
 import axios from 'axios';
 const data = ref([]);
 onMounted(() => {
-  axios.get('http://127.0.0.1:8000/api/third-api')
+  axios.get('http://127.0.0.1:8000/api/user-list')
     .then(response => {
       data.value = response.data;
     })
